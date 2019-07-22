@@ -1,0 +1,9 @@
+
+Feature: Test login functionality on Fuse
+
+Scenario: the user should be able to log in with username and password
+Given user is on the login page
+When user enters correct username and correct password
+Then user will get confirmation 
+
+

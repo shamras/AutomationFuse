@@ -1,0 +1,22 @@
+INDEX VERSION 1.131+C:\Users\rassools\Desktop\Fuse2\.metadata\.plugins\org.eclipse.jdt.core
+1598524788.index
+727135897.index
+3100235559.index
+204475557.index
+302870792.index
+2399693036.index
+1906539666.index
+2900357442.index
+2694563791.index
+2197506739.index
+3783388033.index
+1700805645.index
+4096401286.index
+3480716398.index
+222419503.index
+1190515551.index
+425423518.index
+890475463.index
+2490315436.index
+4095938346.index
+4239219125.index

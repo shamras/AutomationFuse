@@ -1,0 +1,44 @@
+package TestingFuseSite;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+import Pages.DashboardPage;
+import Pages.LogoutPage;
+import Pages.LogoutPage;
+import Pages.LoginPage;
+import utilities.DriverFactory;
+
+public class Login {
+	
+	 @Test
+	    public void loginTestPom() throws InterruptedException {
+	        ///Initialize diver
+	        WebDriver driver = DriverFactory.open("chrome");
+	        driver.get("https://rainforestqa.staging.fuseuniversal.com");
+
+	        ///enter login
+	        LoginPage loginPage = new LoginPage(driver);
+	        loginPage.setUserName("shameera");
+	        loginPage.setPassword("shameera");
+	        loginPage.clickSubmit();
+	        Thread.sleep(2000);
+	        loginPage.acceptCookies();
+
+	        ///dashboard playing/////
+	        DashboardPage dashboardPage = new DashboardPage(driver);
+	        dashboardPage.confirming_TRENDING_as_a_text();
+	        dashboardPage.Clicking_on_a_Article();
+	        dashboardPage.Click_HOME_on_the_string();
+	        dashboardPage.clicking_on_leader_board();
+	        dashboardPage.clicking_RainForestLogo();
+
+	        ////loging out////
+	        LogoutPage logingOut = new LogoutPage(driver);
+	        logingOut.logingOut();
+	        logingOut.confirmLogout();
+	        driver.quit();
+
+	    }}
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;com.loginpagecli&apos;&#x0D;&#x0A;- Original project: &apos;com.loginpagecli&apos;&#x0D;&#x0A;- Original element: &apos;com.loginpagecli/src/test/java/com.logintofuse.com.loginpage&apos;" description="Delete element" element1="/src\/test\/java&lt;com.logintofuse.com.loginpage" element2="/src\/test\/java&lt;com.logintofuse.com" element3="/src\/test\/java&lt;com.logintofuse" element4="/src\/test\/java&lt;com" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1563796123284" subPackages="false" version="1.0"/>
+</session>

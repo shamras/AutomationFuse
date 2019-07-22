@@ -1,0 +1,24 @@
+package stepImplementations;
+
+import org.openqa.selenium.WebDriver;
+
+public class BDDLoginTest {
+	
+	WebDriver driver;
+	
+	 @cucumber.api.java.en.Given("^user is on the login page$")
+	    public void user_is_on_the_login_page(){
+
+	    }
+
+	   @cucumber.api.java.en.When ("^user enters correct username and correct password$")
+	    public void user_enters_correct_username_and_correct_password(){
+
+	    }
+
+	    @cucumber.api.java.en.Then ("^user gets confirmation$")
+	    public void user_gets_confirmation(){
+
+	    }
+
+}

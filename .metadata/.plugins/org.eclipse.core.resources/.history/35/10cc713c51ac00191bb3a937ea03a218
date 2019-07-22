@@ -1,0 +1,83 @@
+package ElementCollection;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.server.handler.FindElement;
+
+
+public class Test_Fust_site {
+	
+
+    @Test
+    public static void main(String[] args) throws InterruptedException {
+       String Email = "shameera";
+        String Password = "shameera";
+        String BrowserType = "chrome"; ////(firefox or Chrome)specify browser types up here if you want to run your tests on different browsers
+        WebDriver driver;
+
+        ////browser type testing get the drivers from our factory
+        driver = 
+
+        ////doing a test by login into the site open browser
+        driver.get("https://rainforestqa.staging.fuseuniversal.com");
+
+
+        Thread.sleep(2000);
+
+
+        ////login layout
+        driver.findElement(By.id("user_login_name")).sendKeys("username");
+        Thread.sleep(2000);
+        driver.findElement(By.id("user_password")).sendKeys("password");
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("[type='submit']")).click();
+        Thread.sleep(2000);
+
+
+        ///accept cookies
+        driver.findElement(By.cssSelector(".b-accept-button")).click();
+        Thread.sleep(2000);
+        System.out.println("pass cookies");
+
+        ///verified the user has logged in
+       String data = driver.findElement(By.linkText("Trending")).getText();
+       System.out.println("Trending : "+data);
+
+
+       ///////////dashboard////////////////////
+       ///click on article called tom jerry
+        driver.findElement(By.linkText("Tom & Jerry")).click();
+        System.out.println("pass clicking tom jerry");
+        Thread.sleep(2000);
+
+        ///click home go back to dash
+        driver.findElement(By.linkText("Home")).click();
+        System.out.println("pass going back to home if in tom and jerry");
+        Thread.sleep(2000);
+
+        ///click on leader board
+        driver.findElement(By.cssSelector("body > div.h-page-article.widgets-and-sidebar > div.b-page-article-and-footer > div.l-page-article > article > div > div > div:nth-child(8) > div > div.b-widget-header > div.b-widget-title > div > a")).click();
+        System.out.println("pass clicking on leader board");
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#logo > img")).click();
+        System.out.println("pass back to dashboard by clicking on logo");
+        Thread.sleep(2000);
+
+        ////logout//////////////////////////////////////////////////////////
+        driver.findElement(By.cssSelector("body > div:nth-child(1) > header > div > div > div.b-topbar-navigation > ul > li.b-topbar-sidemenu-link > span > i")).click();
+        System.out.println("pass click on sidebar");
+        Thread.sleep(2000);
+        driver.findElement(By.linkText("Log out")).click();
+        System.out.println("pass logged out");
+        driver.quit();
+    }
+
+}
+
+
+
+

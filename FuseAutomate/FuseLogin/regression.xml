@@ -1,0 +1,7 @@
+<suite name ="Regression TestSuite">
+<test name ="FuseLoginPage">
+	<classes>
+		<class name = "TestingFuseSite.TestLogin"></class>
+	</classes>
+</test>
+</suite>

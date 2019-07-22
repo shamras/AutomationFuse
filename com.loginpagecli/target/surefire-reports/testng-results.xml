@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression TestSuite" duration-ms="95661" started-at="2019-07-22T11:55:25Z" finished-at="2019-07-22T11:57:01Z">
+    <groups>
+    </groups>
+    <test name="Application Test" duration-ms="95661" started-at="2019-07-22T11:55:25Z" finished-at="2019-07-22T11:57:01Z">
+      <class name="TestingFuseSite.TestLogin">
+        <test-method status="PASS" signature="loginTestPom()[pri:0, instance:TestingFuseSite.TestLogin@35f983a6]" name="loginTestPom" duration-ms="95651" started-at="2019-07-22T13:55:25Z" finished-at="2019-07-22T13:57:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestPom -->
+      </class> <!-- TestingFuseSite.TestLogin -->
+    </test> <!-- Application Test -->
+  </suite> <!-- Regression TestSuite -->
+</testng-results>
